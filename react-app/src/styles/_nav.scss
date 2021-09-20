@@ -1,0 +1,49 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 35px;
+    border-bottom: solid 1px $lightGreyColor;
+    .leftSection{
+        width: 25%;
+        font-family: $poppinsFont;
+        font-size: 19px;
+        font-weight: 500;
+        #letterE{
+            color: $lightYellow;
+        }
+    }
+    .middleSection{
+        width: 50%;
+    }
+    .rightSection{
+        width: 25%;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            list-style: none;
+            font-family: $poppinsFont;
+            font-size: 14px;
+            font-weight: 600;
+            padding-right: 72px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav{
+        padding: 20px;
+    }
+    .rightSection,.middleSection{
+    ul{
+        li{
+            padding-right: 15px;
+        }
+    }
+    }
+    .middleSection{
+        margin-top: 65px;
+    }
+}

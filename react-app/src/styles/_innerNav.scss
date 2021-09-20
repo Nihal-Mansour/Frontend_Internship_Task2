@@ -1,0 +1,48 @@
+.innerNav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    #title{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $poppinsFont;
+        padding: 15px;
+    }
+    #options{
+        padding: 15px;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                list-style: none;
+                padding: 8px;
+                margin-right: 15px;
+                border: solid 1px $lightYellow;
+                border-radius: 50%;
+                color: $lightYellow;
+                cursor: pointer;
+            }
+            #line{
+                width: 70px;
+                height: 1;
+                margin-right: 15px;
+                border-bottom: solid 2px $veryLightGrey;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .innerNav{
+        flex-wrap: wrap-reverse;
+        #title{
+            padding-left: 20px;
+        }
+        #options{
+            margin-left: auto;
+            padding-right: 20px;
+        }
+    }
+}

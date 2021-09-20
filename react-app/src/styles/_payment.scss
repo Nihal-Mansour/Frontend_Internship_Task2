@@ -1,0 +1,208 @@
+.payment{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    #upperSection{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.shippingInfo{
+    width: 40%;
+}
+
+.paymentMethod{
+    width: 30%;
+}
+
+.userCart{
+    width: 20%;
+}
+
+#login,#signup{
+    padding: 10px;
+    width: 125px;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: $poppinsFont;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#login{
+    background-color: $lightYellow;
+}
+
+#signup{
+    border: solid 2px $lightYellow;
+    background-color: white;
+}
+
+#shippingTitle{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $poppinsFont;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#shipInfo{
+    input{
+        width: 45%;
+        border: solid 1px $lightGreyColor;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+    }
+}
+
+#row{
+    display: flex;
+}
+
+#methodImages{
+    padding: 8px;
+    width: 106px;
+    border: solid 1px $lightGreyColor;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 30px;
+        height: 23px;
+    }
+}
+
+#paymentOptions{
+    #methodImages{ 
+        width: 106px;
+    }
+}
+
+#deliveryOptions{
+    #methodImages{ 
+        width: 160px;
+    }
+}
+
+#cartCard{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    #cartTitleStyle{
+        font-size: 14px;
+        font-family: $poppinsFont;
+        font-weight: 600;
+    }
+    #code{
+        font-size: 12px;
+        font-family: $poppinsFont;
+        font-weight: 400;
+        color: $lightGreyColor;
+    }
+}
+
+#cardStyle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.userCart{
+    #userCartContent{
+        text-align: center;
+    }
+    #totalCost{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+        background-color: $veryLightGrey;
+        border: none;
+        border-radius: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: $poppinsFont;
+        font-size: 16px;
+        #cTitle{   
+            font-weight: 300;
+            width: 50%;
+        }
+        #cNum{
+           font-weight: 600;
+           width: 50%;
+        }
+    }
+    #moreInfo{
+        font-size: 14px;
+        font-weight: 300;
+        font-family: $poppinsFont;
+        img{
+            padding-right: 15px;
+        }
+        #cNum{
+            font-weight: 600;
+        }
+    }
+}
+
+#downSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    #back{
+        span{
+            margin-right: 10px;
+        }
+    }
+    button{
+        width: 212px;
+        padding: 15px;
+        border: none;
+        color: black;
+        font-size: 13px;
+        font-family: $poppinsFont;
+        font-weight: 600;
+        border-radius: 25px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    #backShopping{
+        border: solid 2px $veryLightGrey;
+        background-color: white;
+    }
+    #proceedPayment{
+        background-color: $lightYellow;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .payment{
+        text-align: center;
+    }
+    #upperSection{
+        flex-wrap: wrap;
+    }
+    .shippingInfo,.paymentMethod,.userCart{
+        width: 100%;
+    }
+    #row{
+        justify-content: center;
+    }
+}

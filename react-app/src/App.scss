@@ -1,0 +1,11 @@
+@import "./styles/variables";
+@import "./styles/nav";
+@import "./styles/innerNav";
+@import "./styles/shoppingCart";
+@import "./styles/payment";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
